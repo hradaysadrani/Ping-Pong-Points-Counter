@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tennis Score Counter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Raleway:wght@800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="icon" href="https://contents.mediadecathlon.com/p1241056/c4e81c4254a7352cb84cd1e9b0dc0422/p1241056.jpg" />
+</head>
+<body>
+    <section class="section">
+    <div class="conatiner">
+        <div class="columns">  
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by1">
+                            <img src="https://www.advancedsciencenews.com/wp-content/uploads/2021/08/lisa-keffer-i0kB5B9J8Ds-unsplash.jpg" alt="table-tennis-reference-pic">
+                        </figure>
+                    </div>
+                    <header class="card-header">
+                      <p class="card-header-title">
+                       Table Tennis Score Counter
+                      </p>
+                      <button class="card-header-icon" aria-label="more options">
+                        <span class="icon">
+                          <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </button>
+                    </header>
+                    <div class="card-content">
+                      <div class="content">
+                        <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                        
+                        <label for="playto" class="is-large is-inline title is-6">Play Upto : </label>
+                        <div class="select is-rounded">
+                             <select name="" id="playto">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="5">5</option>
+                                <option value="7">7</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                            </select>
+                        
+                          </div>
+                        </div>
+                        <p class="subtitle">Use Buttons Below to Update the Score :</p>   
+                    </div>
+                    <footer class="card-footer">
+                        <button class="button is-primary card-footer-item" id="p1Button">Player 1: +1</button>
+                        <button class="button is-link card-footer-item" id="p2Button">Player 2: +1</button>
+                        <button class="button is-danger card-footer-item" id="reset">Reset</button>
+                    </footer>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
